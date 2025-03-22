@@ -1,0 +1,30 @@
+name: pbssrdf_raft
+channels:
+  - pytorch
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.7
+  - pytorch=1.12.1
+  - torchaudio=0.12.1
+  - torchvision=0.13.1
+  - cudatoolkit=11.3
+  - imageio
+  - joblib
+  - matplotlib
+  - numpy
+  - scikit-image
+  - tqdm
+  - opt_einsum
+  - imageio
+  - 7zip
+  - scipy
+  - tensorboard
+  - conda-forge::colour-science
+  - pip
+  - cython
+  - pip:
+      - opencv-contrib-python==4.4.0.*
+      - opencv-python==4.4.0.*
+      - easydict
+      - open3d

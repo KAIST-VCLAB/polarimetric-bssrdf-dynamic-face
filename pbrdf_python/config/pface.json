@@ -1,0 +1,82 @@
+{
+    "general": {
+        "test": false,
+        "ddp": false,
+        "out_name": "",
+        "root_dir_path": "D:/Data/pface",
+        "participants_name": "FaceData",
+        "module_name": "5_Static",
+        "out_dir_root": "(ROOT_DIR_PATH)/(PARTICIPANTS_NAME)/(MODULE_NAME)/90/pbrdf",
+        "out_dir": null,
+        "seed": 777
+    },
+    "data": {
+        "path": "(ROOT_DIR_PATH)/(PARTICIPANTS_NAME)/(MODULE_NAME)/90",
+        "h": 2048,
+        "w": 2048,
+        "c": 6,
+        "num_cams": 2,
+        "num_frames": 0,
+        "texture_filename": "texture",
+        "batch_size": 1,
+        "patch_size": 128,
+        "random_sample_size": 2097152,
+        "num_frame_patch" : 5,
+        "num_cluster": 0
+    },
+    "opt": {
+        "stage": 1,
+        "use_refrac": true,
+        "restore_ckpt": [false, false, false, false, false, false],
+        "ckpt_path": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""],
+        "max_epoch": 150,
+        "lr": 1e-3,
+        "max_grad_norm": 2.0,
+
+        "SAVE_FREQ_EPOCH": 50,
+        "LOG_FREQ_ITER": 1,
+        "VIS_FREQ_ITER": 50
+    },
+    "init": {
+        "rho_d": 0.5,
+        "refrac_idx": 1.4,
+        "rho_s": 10.0,
+        "rho_ss": 5.0,
+        "alpha_s": 0.35,
+        "alpha_ss": 1.0
+    },
+    "clamp": {
+        "rho_d": [0.01, 1e8],
+        "refrac_idx": [1.3, 1.6],
+        "rho_s": [0.01, 1e8],
+        "rho_ss": [0.01, 1e8],
+        "alpha_s": [0.1, 0.7],
+        "alpha_ss": [0.7, 1.0]
+    },
+    "threshold": {
+        "ndotl": 0.7,
+        "ndoth": 0.86,
+        "diffuse": 1e-4
+    },
+    "loss": {
+        "w_diffuse": 1.0,
+        "w_specular": 1.0,
+        "w_temporal_height": 1.0,
+        "w_laplacian_height": 1000.0,
+        "w_alpha_s": 200.0,
+        "w_alpha_ss": 200.0,
+        "w_smooth_rho_d": 0.0,
+        "w_refrac_idx": 400.0,
+        "w_azimuthal": 1.0,
+        "w_DoP": 0.002,
+        "w_cluster_specular": 1.0,
+        "w_cluster_refractive": 0.005,
+        "w_virtual_specular": 0.05
+    }
+}

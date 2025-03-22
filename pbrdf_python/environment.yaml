@@ -1,0 +1,24 @@
+name: pbssrdf_face
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.7
+  - pytorch=1.12.1
+  - torchaudio=0.12.1
+  - torchvision=0.13.1
+  - cudatoolkit=11.3
+  - imageio
+  - joblib
+  - matplotlib
+  - numpy
+  - scikit-image
+  - scipy
+  - tensorboard
+  - conda-forge::colour-science
+  - pip
+  - cython
+  - pip:
+      - opencv-contrib-python==4.6.0.66
+      - opencv-python==4.6.0.66
+      - easydict

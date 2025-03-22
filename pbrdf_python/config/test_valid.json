@@ -1,0 +1,29 @@
+{
+    "general": {
+        "test": true,
+        "ddp": false,
+        "out_name": "",
+        "participants_name": "P5",
+        "module_name": "5_Static",
+        "dir_root": "N",
+        "input_texture_root": "H",
+        "out_dir_name": "validation",
+        "out_dir_root": "(DIR_ROOT):/pf_opt_data/(PARTICIPANTS_NAME)/(MODULE_NAME)/(OUT_DIR_NAME)",
+        "out_dir": null,
+        "seed": 777
+    },
+    "data": {
+        "path": "(DIR_ROOT):/pf_opt_data/(PARTICIPANTS_NAME)/(MODULE_NAME)",
+        "input_img_path": "(INPUT_DIR_ROOT):/pf_data/(PARTICIPANTS_NAME)/(MODULE_NAME)",
+        "h": 2448,
+        "w": 2048,
+        "num_cams": 3,
+        "num_frames": 0,
+        "texture_filename": "texture",
+        "batch_size": 10,
+        "start_idx": 0,
+        "patch_size": 128,
+        "num_frame_patch" : 5,
+        "num_cluster": 0
+    }
+}
